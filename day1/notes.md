@@ -1,2 +1,3 @@
 This was really quite annoying and took me far too long to get. Part 1 was easy and I figured out part 2 quite fast too, but the edge casing part was what was tricky and took me a considerable amount of time
-Would've liked to have had a better solution but this words . The approach I took with it was to focus on the first and last number instead of converting everything to deal with the edge cases. I could've just swapped eight into 8eight so eighthree would've come out as 8eight3three to deal with the edge cases, but since that felt like cheating I opted to go and focus on finding the first digit, then finding the last
+Would've liked to have had a better solution but this words . I could've just swapped eight into 8eight so eighthree would've come out as e8ightt3hree to deal with the edge cases, but since that felt like cheating I opted to go and focus on finding the first digit, then finding the last
+I ended up doing the cheaty way too afterwards just because
