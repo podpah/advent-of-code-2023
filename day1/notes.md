@@ -1,0 +1,2 @@
+This was really quite annoying and took me far too long to get. Part 1 was easy and I figured out part 2 quite fast too, but the edge casing part was what was tricky and took me a considerable amount of time
+Would've liked to have had a better solution but this words 
