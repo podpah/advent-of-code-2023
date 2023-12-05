@@ -3,20 +3,21 @@ data = f.read()
 array = data.split('\n')
 
 sum = 0
-for each in array:
-    card, values = each.split(":")
-    card_id = card[5:]
+objs = []
+for index, each in enumerate(array):
+    winning_nums, guesses = each.split(":")[1].split("|")
+    winning_nums = [int(nums) for nums in winning_nums.strip().split()] # List Comprehension
+    guesses = [int(nums) for nums in guesses.strip().split() ] # List Comprehension
+    objs.append({"id" : index, "winning_nums":winning_nums, "guesses" : guesses,  "amount": 1})
 
-    winning_nums, guesses = values.split("|")
-    winning_nums = [int(nums) for nums in winning_nums.strip().replace("  ", " ").split(" ")] # List Comprehension
-    guesses = [int(nums) for nums in guesses.strip().replace("  ", " ").split(" ") ] # List Comprehension
-
+for each in objs:
+    sum += each["amount"]
     score = 0
-    for num in guesses:
-        if num in winning_nums:
+    for num in each["guesses"]:
+        if num in each["winning_nums"]:
             score += 1
-    num = 1 if score else 0
-    for r in range(score-1):
-        num *= 2
-    sum += num
+    
+    for r in range(score):
+        objs[each["id"]+r+1]["amount"] += each["amount"]
+
 print(sum)
