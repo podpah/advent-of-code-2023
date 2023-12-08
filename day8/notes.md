@@ -1,0 +1,1 @@
+Yet another day where I took too long because I misread. Took me a while to figure out my part 1 was failing because I was starting at the first item, not AAA.
