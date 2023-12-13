@@ -6,6 +6,6 @@ result = 0
 for each in array:
     nums = "".join(letter for letter in each if letter.isdigit())
     str = nums[0]
-    str += nums[len(nums)-1]
+    str += nums[len(nums) - 1]
     result += int(str)
 print(result)
