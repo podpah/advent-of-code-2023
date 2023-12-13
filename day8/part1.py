@@ -2,7 +2,7 @@ f = open("day8/input.txt")
 data = f.read()
 array = data.split("\n")
 
-sequence, values = array[0].replace("L","0").replace("R","1"), array[2:]
+sequence, values = array[0].replace("L", "0").replace("R", "1"), array[2:]
 steps = 0
 current_id = "AAA"
 vals = {}

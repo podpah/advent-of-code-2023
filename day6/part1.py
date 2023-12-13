@@ -11,7 +11,7 @@ for each in both:
     distance = int(each[1])
 
     for wait in range(duration + 1):
-        distance_travelled = (duration-wait)*wait
+        distance_travelled = (duration - wait) * wait
         if distance_travelled > distance:
             sum += 1
     total *= sum
