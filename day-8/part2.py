@@ -1,7 +1,7 @@
 from functools import reduce
 from math import lcm  # lowest common multiple
 
-f = open("day8/input.txt")
+f = open("day-8/input.txt")
 data = f.read()
 array = data.split("\n")
 

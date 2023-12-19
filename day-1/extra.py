@@ -1,6 +1,6 @@
 import re
 
-f = open("day1/input.txt")
+f = open("day-1/input.txt")
 data = f.read()
 array = data.split("\n")
 

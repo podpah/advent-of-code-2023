@@ -1,4 +1,4 @@
-f = open("day6/input.txt")
+f = open("day-6/input.txt")
 data = f.read()
 
 times, distances = [line.split(":")[1].split() for line in data.split("\n")]

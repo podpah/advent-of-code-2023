@@ -1,0 +1,1 @@
+Day 15 part 1 was super simple so I ended up doing it but part 2 seemed so long I ended up not even reading all of it. I haven't been doing them anymore as they've gotten rather complex.
