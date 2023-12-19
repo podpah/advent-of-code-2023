@@ -1,7 +1,7 @@
 # This took me surprisingly long and was an immense headache due to the edge cases
 import re
 
-f = open("day1/input.txt")
+f = open("day-1/input.txt")
 data = f.read()
 array = data.split("\n")
 

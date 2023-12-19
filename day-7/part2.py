@@ -1,6 +1,6 @@
 from collections import Counter
 
-array = open("day7/input.txt").read().split("\n")
+array = open("day-7/input.txt").read().split("\n")
 hands = {
     "five_kind": [],
     "four_kind": [],
@@ -17,7 +17,13 @@ for index, each in enumerate(array):
 # Sort cards by hand type
 for each in array:
     count = Counter(each[0])
-    sorted_count = count.most_common()
+    sorted_count = [list(values) for values in count.most_common()]
+    j = count.get("J", 0)
+    if j:
+        if len(sorted_count) > 1 and j:
+            sorted_count.pop(sorted_count.index(["J", j]))
+        sorted_count[0][1] += j
+        sorted_count[0][1] = 5 if sorted_count[0][1] > 5 else sorted_count[0][1]
 
     if sorted_count[0][1] == 5:
         hands["five_kind"].append(each)
@@ -36,7 +42,7 @@ for each in array:
 
 
 def my_sort_key(hand):
-    order = "AKQJT98765432"
+    order = "AKQT98765432J"
     return [order.index(rank) for rank in hand[0]]
 
 
